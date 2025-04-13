@@ -1,0 +1,3 @@
+Pillow
+google-generativeai
+dotenv
