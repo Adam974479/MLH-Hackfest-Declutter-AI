@@ -1,5 +1,5 @@
 # [1] — Same imports from both scripts + extras
-import os, sys, shutil, json, re, hashlib, zipfile, subprocess, platform, ctypes
+import os, sys, shutil, json, re, hashlib, zipfile, subprocess, platform, ctypes, dotenv
 import tkinter as tk
 from tkinter import filedialog, messagebox, Canvas, Frame, Scrollbar
 from PIL import Image, ImageTk
@@ -52,7 +52,7 @@ def add_placeholder(entry_widget, placeholder_text, color="#999999"):
     entry_widget.bind("<FocusOut>", on_focus_out)
 
 # [6] — Gemini
-genai.configure(api_key="your-api-key-here")
+genai.configure(api_key=dotenv.get_key(".env", "GEMINI_API_KEY"))
 model = genai.GenerativeModel("models/gemini-1.5-pro")
 
 def call_gemini_api(file_data, user_prompt):

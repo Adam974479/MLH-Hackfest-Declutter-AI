@@ -13,6 +13,16 @@ Declutter AI is an innovative application designed to help you organize and mana
     ```bash
     git clone https://github.com/Adam974479/MLH-Hackathon
     ```
+
+1. Get a Gemini API Key:
+    https://aistudio.google.com/app/apikey
+
+1. Paste Key into .env file:
+    open the .env file and past the key after 
+    ```bash
+    GEMINI_API_KEY=
+    ```
+
 2. Install dependencies:
     ```bash
     pip install -r requirements.txt
