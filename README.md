@@ -18,7 +18,7 @@ Declutter AI is an innovative application designed to help you organize and mana
     https://aistudio.google.com/app/apikey
 
 1. Paste Key into .env file:
-    open the .env file and past the key after 
+    open the .env file and paste the key after 
     ```bash
     GEMINI_API_KEY=
     ```
